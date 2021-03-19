@@ -349,16 +349,6 @@
    padding-left: 66%;
  }
 
-   @media screen and (max-height: 560px) {
-      .header {
-         /* height: 560px; */
-         
-      }
-      .header__home {
-
-      }
-   }
-
 }
 
 
@@ -471,6 +461,20 @@
    }
 }
 
+
+
+
+
+@media screen and (max-height: 660px) {
+   .header__text {
+      font-size: 1.2em;
+      margin: 0.5em 0;
+   }
+   .header__button{
+      margin: 0 auto 0.5em;
+      font-size: 1em;
+   }
+}
 
 
 

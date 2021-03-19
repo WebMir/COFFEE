@@ -60,11 +60,7 @@ body{
 	grid-template-columns: auto 1fr auto;
 	align-items: center;
 	column-gap: 1em;
-	width: 100%;
 	margin: auto;
-}
-.header__logo{
-
 }
 .header__nav{
 	font-size: 1.5em;
@@ -77,7 +73,7 @@ body{
 	font-size: 1.5em;
 	text-align: right;
 }
-.m-menu__open{
+.m-menu__open{/**Кнопка открытия мобильного меню**/
 	display: none;
 }
 /* HOME Главный экран */
@@ -85,28 +81,29 @@ body{
 	background-color: #352d29;
 	width: 100%;
 	max-width: 1300px;
-	display: grid;
-	grid-template-columns: 8fr 4fr;
-	grid-template-rows: calc(100vh - 13em);
+	min-height: 240px;
+	height: calc(100vh - 13em);
+	display: flex;
 	align-items: center;
-	column-gap: 1em;
 	margin: 2em auto 5em;
 }
-.header__title-mob{
+.header__title-mob{/**Загаловок  COFFEE которое должно появится в моб версии сайта**/
 	display: none;
 }	
 .header__cover{
-	width: 100%;
+	width: 60%;
 	height: 100%;
 	background: url(../img/header.jpg) 60% 50%;
 	background-size: cover;
+	overflow: hidden;
+	margin-right: 1em;
 }
 .header__info{
+	width: 40%;
 	height: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-
 }
 .header__title{
 	font-size: 7em;
@@ -116,7 +113,7 @@ body{
 
 }
 .header__text{
-	font-size: 1.2em;
+	font-size: 1.5em;
 	line-height: 1.5;
 	margin: 1.5em 0;
 
@@ -629,6 +626,7 @@ body{
 	justify-content: center;
 	align-items: center;
 	font-size: 1.5em;
+	overflow-y: scroll;
 }
 .window__form{
    /* width: 100%;

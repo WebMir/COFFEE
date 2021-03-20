@@ -1,0 +1,151 @@
+/** Карточка меню **/
+.menu__card{ /**На все слайдеры*/
+   height: 100%;
+	position: relative;
+	transition: 3s;
+	overflow: hidden;
+}
+
+.menu__card-wrapper{
+   width: 100%;
+   display: flex;
+   position: absolute;
+}
+
+.slider__drink{
+   /* display: none; */
+   transform: scale(0);
+   transition: 1s;
+}
+.slider__bake{
+   /* display: none; */
+   transform: scale(0);
+   transition: 1s;
+}
+.slider__dessert{
+   /* display: none; */
+   transform: scale(0);
+   transition: 1s;
+}
+.activ-slider{
+   /* display: block; */
+   transform: scale(1);
+   transition: 0s;
+   z-index: 3;
+}
+
+.menu__card-cover{
+	width: 60%;
+	max-width: 640px;
+	height: 640px;
+	overflow: hidden;
+   margin-right: 1em;
+}
+.menu__cover-activ{
+   animation: coverplay 0.3s linear 0s;
+}
+
+@keyframes coverplay{
+	0%{
+		transform: translateX(-800px);
+	}
+	100%{
+		transform: translateX(0px);
+	}
+}
+.menu__card-img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.menu__price{
+	width: 40%;
+}
+.menu__price-activ{
+   animation: priceplay 0.3s linear 0s;
+}
+
+@keyframes priceplay{
+	0%{
+		transform: translateX(800px);
+	}
+	100%{
+		transform: translateX(0px);
+	}
+}
+.menu__price-title {
+	font-size: 20px;
+	color: rgb(242, 242, 242);
+	line-height: 8;
+}
+.menu__price-item {
+	height: 2.86em;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	font-size: 20px;
+	color: rgb(242, 242, 242);
+	line-height: 1.5;
+	border-bottom: 1px solid #7c6a5f ;
+ }
+ .menu__price-item p:last-child{
+   white-space: nowrap;
+}
+.activ{
+	border-bottom: 3px solid #b69888;
+}
+
+
+
+@media screen and (max-width: 980px) {
+
+
+}
+
+@media screen and (max-width: 700px) {
+   .menu{
+      background-color: #392f29;
+      border-radius: 66% 34% 42% 58% / 66% 41% 59% 34% ;
+   }
+
+   .menu__card-wrapper{
+      width: 100%;
+      justify-content: center;
+   }
+   .menu__card-cover{
+      display: none;
+   }
+   .menu__price{
+      width: 80%;
+   }
+   .menu__price-title {
+      line-height: 4;
+   }
+}
+
+@media screen and (max-width: 560px) {
+
+   .menu__price{
+      width: 100%;
+   }
+}
+
+@media screen and (max-width: 420px) {
+
+   
+}
+
+
+
+
+@media screen and (min-width: 560px) {
+
+@media screen and (max-height: 430px) {
+   .menu__price-item {
+      height: 2.2em;
+   }
+   .menu__price-title {
+      line-height: 2;
+   }
+}
+}

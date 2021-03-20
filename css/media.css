@@ -80,24 +80,6 @@
       display: flex;
    }
 
-   /* .header__home::before{
-      content: "";
-      background-color: #392f29;
-      width: 120%;
-      height: 2em;
-      position: absolute;
-      top: -20%;
-      left: -10%;
-   }
-   .header__home::after{
-      content: "";
-      background-color: #392f29;
-      width: 120%;
-      height: 2em;
-      position: absolute;
-      top: 113%;
-      left: -10%;
-   } */
    .header__title {
       font-size: 6em;
       margin-top: 0em;
@@ -124,25 +106,10 @@
       width: 310px;
       left: -5%;
    }
-   .menu__card{ /**На все слайдеры*/
-      grid-template-columns: 1fr 1fr;
-      margin: var(--paddingWraper);
-   }
-   .menu__card-cover{
-      height: 600px;
-   }
-
-
-
-
-
-
-
 
    .gallery__wrapper{
       height: 900px;
    }
-
 
 }
 
@@ -168,9 +135,11 @@
   .about__decor::after{
    width: 240px;
    }
+
    .gallery__wrapper{
       height: 800px;
    }
+
 }
 
 @media screen and (max-width: 700px) {
@@ -182,10 +151,6 @@
       transform: rotateY(180deg);
       cursor: pointer;
    }
-   .m-menu__open-svg{
-
-   }
-
 
    .header__bar{
       height: 5em;
@@ -214,18 +179,7 @@
 
 
 
-
-
-
-
-   
-
-
-
-
-
    /**меню **/
-
    /** Кнопки выбора категории меню **/
    .menu-cat__link{
       font-size: 1.5em;
@@ -243,30 +197,7 @@
    .menu__button-left::before{
       display: none;
    }
-   .menu__card{
-      display: block;
-   }
-   .menu__card-cover{
-      display: none;
-   }
-   .menu__price{
-      width: 100%;
-      left: 0%;
-   }
-   .menu__price-item {
-      max-width: 400px;
-      height: 100%;
-      min-height: 2.86em;
-      margin: 0 auto;
-   }
-   .menu__price-item p:last-child{
-      white-space: nowrap;
-   }
-   .menu__price-title {
-      max-width: 400px;
-      line-height: 6;
-      margin: 0 auto;
-   }
+
       
    .gallery__wrapper{
       height: 900px;
@@ -313,43 +244,42 @@
       font-size: 1.5em;
    }
 
-/** Кнопки выбора категории меню **/
-.menu-cat{
-	width: 100%;
-	max-width: 1300px;
-	margin: 2em auto;
-	padding: var(--paddingWraper);
-}
-.menu-cat__title{
-	font-size: 36px;
-	color: #f2f2f2;
-	line-height: 3;
- }
- .menu-cat__link{
-   display: block;
-	width: 100%;
-   max-width: none;
-	font-size: 1.5em;
-	color: #f2f2f2;
-	line-height: 2;
-	transition: 0.3s;
-   text-align: left;
- }
- .menu-cat__link:hover{
-	color: #cb7c51;
- }
- .drink-link{
-
- }
- .bake-link{
-   padding-left: 33%;
- }
- .dessert-link{
-
-   padding-left: 66%;
- }
-
-}
+   /** Кнопки выбора категории меню **/
+   .menu-cat{
+      width: 100%;
+      max-width: 1300px;
+      margin: 2em auto;
+      padding: var(--paddingWraper);
+   }
+   .menu-cat__title{
+      font-size: 36px;
+      color: #f2f2f2;
+      line-height: 3;
+    }
+    .menu-cat__link{
+      display: block;
+      width: 100%;
+      max-width: none;
+      font-size: 1.5em;
+      color: #f2f2f2;
+      line-height: 2;
+      transition: 0.3s;
+      text-align: left;
+    }
+    .menu-cat__link:hover{
+      color: #cb7c51;
+    }
+    .drink-link{
+   
+    }
+    .bake-link{
+      padding-left: 33%;
+    }
+    .dessert-link{
+   
+      padding-left: 66%;
+    }
+   
 
 
 @media screen and (max-width: 500px) {
@@ -380,12 +310,11 @@
       width: 20em;
   }
 
-
   .window__form{
-   width: 100%;
-	max-width: 360px;
-	grid-template: "close""date""time""person""name""tel""email""coment""submit";
-}
+     width: 100%;
+     max-width: 360px;
+     grid-template: "close""date""time""person""name""tel""email""coment""submit";
+   }
 
 }
 
@@ -407,22 +336,12 @@
       align-items: center;
       position: relative;
    }
-   .menu__button-left::before{
-      content: "";
-      background-color: #392f29;
-      width: 440px;
-      height: 110%;
-      position: absolute;
-      top: -5%;
-      left: 0%;
-   }
    .menu__button-right{
       display: flex;
       align-items: center;
       justify-content: flex-end;
    }
    
-
 }
 
 
@@ -430,6 +349,9 @@
 
 
 @media screen and (max-width: 370px) {
+   .header__address{
+      font-size: 1em;
+   }
    .header__title{
       font-size: 4em;
    }
@@ -449,15 +371,13 @@
    }
    .footer__icon {
       width: auto;
-
-  }
+   }
 }
 
 @media screen and (max-width: 260px) {
    .gallery__wrapper{
       display: block;
       height: auto;
-
    }
 }
 
@@ -466,6 +386,10 @@
 
 
 @media screen and (max-height: 660px) {
+   .m-menu{
+      z-index: 3;
+      font-size: 1.5em;
+   }
    .header__text {
       font-size: 1.2em;
       margin: 0.5em 0;
@@ -480,53 +404,17 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (max-height: 660px) {
-   .m-menu{
-      background-color: #392f29;
-      width: 100%;
-      height: 100vh;
-      position: absolute;
-      z-index: 3;
-      padding: 1em;
-      text-align: center;
-      font-size: 1.5em;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      row-gap: 0.1em;
-   }
-}
-
-
-
-
 @media screen and (min-width: 560px) {
-   
+
    @media screen and (max-height: 660px) {
       .header__cover {
          width: 60%;
          height: 95%;
       }
-     .header__info {
-        width: 40%;
-        height: 95%;
+      .header__info {
+         width: 40%;
+         height: 95%;
       }
-         
       .header__title {
          margin-top: 0em;
          font-size: 4.5em;
@@ -535,7 +423,7 @@
          font-size: 1.2em;
          margin: 1em 0;
       }
-       .header__button {
+      .header__button {
          max-width: 220px;
       }
    }
@@ -574,12 +462,7 @@
          height: 340px;
       }
 
-      .menu__price-item {
-         height: 2.2em;
-      }
-      .menu__price-title {
-         line-height: 2;
-      }
+
 
       .gallery__wrapper {
          height: 600px;

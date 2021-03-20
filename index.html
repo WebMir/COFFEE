@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 	<link rel="stylesheet" type="text/css" href="css/media.css" />
+	<link rel="stylesheet" type="text/css" href="css/slider.css" />
 </head>
 <body>
 
@@ -57,14 +58,14 @@
 				<a class="m-menu__nav-link a1" href="#">О нас</a>
 				<a class="m-menu__nav-link a2" href="#">Меню</a>
 				<a class="m-menu__nav-link a3" href="#">Галерея</a>
-				<a class="m-menu__nav-link a5" href="#">Контакты</a>
+				<!-- <a class="m-menu__nav-link a5" href="#">Контакты</a> -->
 			</nav>
 
 			<div class="m-menu__address">
 				<h6 class="m-menu__address-title">Наш адрес</h6>
-				<p class="m-menu__address-p">Москва, ул. Пушкина, д. Калатушкина</p>
+
 				<a class="m-menu__address-link" href="https://www.google.ru/maps/place/%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0/" target="_blank" title="Вы перейдете на Google карты">
-					Ссылка на Google Карты
+					Москва, ул. Пушкина,<br /> д. Калатушкина
 				</a>
 			</div>
 
@@ -104,8 +105,8 @@
 				<a class="header__nav-link a5" href="#">Контакты</a>
 			</nav>
 			<div class="header__address">
-				<a class="m-menu__address-link" href="https://www.google.ru/maps/place/%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0/" target="_blank" title="Вы перейдете на Google карты">
-					Ссылка на Google Карты
+				<a href="https://www.google.ru/maps/place/%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0/" target="_blank" title="Вы перейдете на Google карты">
+					Москва, ул. Пушкина, 17
 				</a>
 			</div>
 			<div class="m-menu__open">
@@ -183,47 +184,53 @@
 
 				<div class="menu__card">
 
-					<div class="menu__card-cover anima-cover1">
-						<img src="img/11.jpg" alt="" class="menu__card-img">
+					<div class="menu__card-wrapper slider__drink">
+						<div class="menu__card-cover anima-cover1">
+							<img src="img/11.jpg" alt="" class="menu__card-img">
+						</div>
+						<menu class="menu__price anima-price1">
+							<h2 class="menu__price-title">Кофе и напитки</h2>
+							<li class="menu__price-item"> <p>Эспрессо</p>	 <p>75 руб</p> </li>
+							<li class="menu__price-item"> <p>Американо</p>	 <p>100 руб</p> </li>
+							<li class="menu__price-item"> <p>Капучино</p> 	 <p>150 руб</p> </li>
+							<li class="menu__price-item"> <p>Латте</p> 		 <p>150 роб</p> </li>
+							<li class="menu__price-item"> <p>Флет Уайт</p> 	 <p>155 руб</p> </li>
+							<li class="menu__price-item"> <p>Чай черный</p>  <p>100 руб</p> </li>
+							<li class="menu__price-item"> <p>Чай зеленый</p> <p>100 руб</p> </li>
+						</menu>
 					</div>
-					<menu class="menu__price anima-price1">
-						<h2 class="menu__price-title">Кофе и напитки</h2>
-						<li class="menu__price-item"> <p>Эспрессо</p>	 <p>75 руб</p> </li>
-						<li class="menu__price-item"> <p>Американо</p>	 <p>100 руб</p> </li>
-						<li class="menu__price-item"> <p>Капучино</p> 	 <p>150 руб</p> </li>
-						<li class="menu__price-item"> <p>Латте</p> 		 <p>150 роб</p> </li>
-						<li class="menu__price-item"> <p>Флет Уайт</p> 	 <p>155 руб</p> </li>
-						<li class="menu__price-item"> <p>Чай черный</p>  <p>100 руб</p> </li>
-						<li class="menu__price-item"> <p>Чай зеленый</p> <p>100 руб</p> </li>
-					</menu>
 
-					<div class="menu__card-cover anima-cover2">
-						<img src="img/22.jpg" alt="" class="menu__card-img">
+					<div class="menu__card-wrapper slider__bake">
+						<div class="menu__card-cover anima-cover2">
+							<img src="img/22.jpg" alt="" class="menu__card-img">
+						</div>
+						<menu class="menu__price anima-price2">
+							<h2 class="menu__price-title">Выпечка</h2>
+							<li class="menu__price-item"> <p>Эспрессо</p> 		<p>75 руб</p> </li>
+							<li class="menu__price-item"> <p>Американо</p> 		<p>100 руб</p> </li>
+							<li class="menu__price-item"> <p>Капучино</p> 		<p>150 руб</p> </li>
+							<li class="menu__price-item"> <p>Латте</p> 			<p>150 роб</p> </li>
+							<li class="menu__price-item"> <p>Флет Уайт</p> 		<p>155 руб</p> </li>
+							<li class="menu__price-item"> <p>Чай черный</p> 	<p>100 руб</p> </li>
+							<li class="menu__price-item"> <p>Чай зеленый</p>	<p>100 руб</p> </li>
+						</menu>
 					</div>
-					<menu class="menu__price anima-price2">
-						<h2 class="menu__price-title">Выпечка</h2>
-						<li class="menu__price-item"> <p>Эспрессо</p> 		<p>75 руб</p> </li>
-						<li class="menu__price-item"> <p>Американо</p> 		<p>100 руб</p> </li>
-						<li class="menu__price-item"> <p>Капучино</p> 		<p>150 руб</p> </li>
-						<li class="menu__price-item"> <p>Латте</p> 			<p>150 роб</p> </li>
-						<li class="menu__price-item"> <p>Флет Уайт</p> 		<p>155 руб</p> </li>
-						<li class="menu__price-item"> <p>Чай черный</p> 	<p>100 руб</p> </li>
-						<li class="menu__price-item"> <p>Чай зеленый</p>	<p>100 руб</p> </li>
-					</menu>
 
-					<div class="menu__card-cover anima-cover3">
-						<img src="img/33.jpg" alt="" class="menu__card-img">
+					<div class="menu__card-wrapper slider__dessert">
+						<div class="menu__card-cover anima-cover3">
+							<img src="img/33.jpg" alt="" class="menu__card-img">
+						</div>
+						<menu class="menu__price anima-price3">
+							<h2 class="menu__price-title">Десерты</h2>
+							<li class="menu__price-item"> <p>Эспрессо</p> 		<p>75 руб</p> </li>
+							<li class="menu__price-item"> <p>Американо</p> 		<p>100 руб</p> </li>
+							<li class="menu__price-item"> <p>Капучино</p> 		<p>150 руб</p> </li>
+							<li class="menu__price-item"> <p>Латте</p> 			<p>150 роб</p> </li>
+							<li class="menu__price-item"> <p>Флет Уайт</p> 		<p>155 руб</p> </li>
+							<li class="menu__price-item"> <p>Чай черный</p> 	<p>100 руб</p> </li>
+							<li class="menu__price-item"> <p>Чай зеленый</p> 	<p>100 руб</p> </li>
+						</menu>
 					</div>
-					<menu class="menu__price anima-price3">
-						<h2 class="menu__price-title">Десерты</h2>
-						<li class="menu__price-item"> <p>Эспрессо</p> 		<p>75 руб</p> </li>
-						<li class="menu__price-item"> <p>Американо</p> 		<p>100 руб</p> </li>
-						<li class="menu__price-item"> <p>Капучино</p> 		<p>150 руб</p> </li>
-						<li class="menu__price-item"> <p>Латте</p> 			<p>150 роб</p> </li>
-						<li class="menu__price-item"> <p>Флет Уайт</p> 		<p>155 руб</p> </li>
-						<li class="menu__price-item"> <p>Чай черный</p> 	<p>100 руб</p> </li>
-						<li class="menu__price-item"> <p>Чай зеленый</p> 	<p>100 руб</p> </li>
-					</menu>
 
 				</div>
 
@@ -237,7 +244,7 @@
 		</div>
 	</div>
 
-	<div class="gallery">
+	<!-- <div class="gallery">
 		<div class="gallery__wrapper">
 
 			<div class="gallery__img-1"><img class="gallery__gal" src="img/gal/1.jpg" alt="gallery"></div>
@@ -247,7 +254,7 @@
 			<div class="gallery__img-5"><img class="gallery__gal" src="img/gal/5.jpg" alt="gallery"></div>
 
 		</div>
-	</div>
+	</div> -->
 
 	<section class="footer">
 
@@ -267,9 +274,9 @@
 
 			<div class="footer__social">
 				<div class="footer__icon">
-					<a href="https://www.facebook.com/"target="_blank"><img src="svg/facebook.svg" alt="facebook" class="footer__icon-img"></a>
-					<a href="https://www.instagram.com/" target="_blank"><img src="svg/instagram.svg" alt="instagram." class="footer__icon-img"></a>
-					<a href="https://vk.com/id346571759" target="_blank"><img src="svg/vk.svg" alt="vk" class="footer__icon-img"></a>
+					<a class="footer__icon-facebook" href="https://www.facebook.com/"target="_blank"><img src="svg/facebook.svg" alt="facebook" class="footer__icon-img"></a>
+					<a class="footer__icon-instagram" href="https://www.instagram.com/" target="_blank"><img src="svg/instagram.svg" alt="instagram." class="footer__icon-img"></a>
+					<a class="footer__icon-vk" href="https://vk.com/id346571759" target="_blank"><img src="svg/vk.svg" alt="vk" class="footer__icon-img"></a>
 					<button class="footer__button button">Забронировать</button>
 				</div>
 			</div>

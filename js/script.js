@@ -22,6 +22,7 @@ let animaPrice3 = document.querySelector('.anima-price3');
 
 // sliderDrink.setAttribute('style', 'opacity: 1;')
 drinkLink.classList.add('activ');
+sliderDrink.classList.add('activ-slider');
 
 // animaCover1.setAttribute('style', 'transform: translateX(0px);')
 // animaPrice1.setAttribute('style', 'transform: translateX(0px);')
@@ -33,6 +34,10 @@ function functionDrinkLink(){
     drinkLink.classList.add('activ');
     bakeLink.classList.remove('activ');
     dessertLink.classList.remove('activ');
+
+    sliderDrink.classList.add('activ-slider');
+    sliderBake.classList.remove('activ-slider');
+    sliderDessert.classList.remove('activ-slider');
 
     // animaCover1.setAttribute('style', 'transform: translateY(0px);')
     // animaPrice1.setAttribute('style', 'transform: translateY(0px);')
@@ -46,14 +51,15 @@ function functionDrinkLink(){
     animaCover1.classList.add('menu__cover-activ');
     animaPrice1.classList.add('menu__price-activ');
 
-    animaCover2.classList.add('menu__cover-none');
-    animaPrice2.classList.add('menu__price-none');
+    // animaCover2.classList.add('menu__cover-none');
+    // animaPrice2.classList.add('menu__price-none');
 
-    animaCover3.classList.add('menu__cover-none');
-    animaPrice3.classList.add('menu__price-none');
+    // animaCover3.classList.add('menu__cover-none');
+    // animaPrice3.classList.add('menu__price-none');
 
-    animaCover1.classList.remove('menu__cover-none');
-    animaPrice1.classList.remove('menu__price-none');
+
+    // animaCover1.classList.remove('menu__cover-none');
+    // animaPrice1.classList.remove('menu__price-none');
 
     animaCover2.classList.remove('menu__cover-activ');
     animaPrice2.classList.remove('menu__price-activ');
@@ -70,6 +76,10 @@ function functionBakeLink(){
     bakeLink.classList.add('activ');
     dessertLink.classList.remove('activ');
 
+    sliderDrink.classList.remove('activ-slider');
+    sliderBake.classList.add('activ-slider');
+    sliderDessert.classList.remove('activ-slider');
+
     // animaCover2.setAttribute('style', 'transform: translateY(0px);')
     // animaPrice2.setAttribute('style', 'transform: translateY(0px);')
 
@@ -79,21 +89,21 @@ function functionBakeLink(){
     // animaCover3.setAttribute('style', 'transform: translateX(-800px);')
     // animaPrice3.setAttribute('style', 'transform: translateX(6000px);')
 
-    animaCover1.classList.add('menu__cover-none');
-    animaPrice1.classList.add('menu__price-none');
+    // animaCover1.classList.add('menu__cover-none');
+    // animaPrice1.classList.add('menu__price-none');
 
     animaCover2.classList.add('menu__cover-activ');
     animaPrice2.classList.add('menu__price-activ');
 
-    animaCover3.classList.add('menu__cover-none');
-    animaPrice3.classList.add('menu__price-none');
+    // animaCover3.classList.add('menu__cover-none');
+    // animaPrice3.classList.add('menu__price-none');
 
 
     animaCover1.classList.remove('menu__cover-activ');
     animaPrice1.classList.remove('menu__price-activ');
 
-    animaCover2.classList.remove('menu__cover-none');
-    animaPrice2.classList.remove('menu__price-none');
+    // animaCover2.classList.remove('menu__cover-none');
+    // animaPrice2.classList.remove('menu__price-none');
 
     animaCover3.classList.remove('menu__cover-activ');
     animaPrice3.classList.remove('menu__price-activ');
@@ -108,6 +118,10 @@ function functionListener(){
     bakeLink.classList.remove('activ');
     dessertLink.classList.add('activ');
 
+    sliderDrink.classList.remove('activ-slider');
+    sliderBake.classList.remove('activ-slider');
+    sliderDessert.classList.add('activ-slider');
+
     // animaCover3.setAttribute('style', 'transform: translateX(0px);')
     // animaPrice3.setAttribute('style', 'transform: translateX(0px);')
 
@@ -117,11 +131,11 @@ function functionListener(){
     // animaCover1.setAttribute('style', 'transform: translateX(-800px);')
     // animaPrice1.setAttribute('style', 'transform: translateX(600px);')
 
-    animaCover1.classList.add('menu__cover-none');
-    animaPrice1.classList.add('menu__price-none');
+    // animaCover1.classList.add('menu__cover-none');
+    // animaPrice1.classList.add('menu__price-none');
 
-    animaCover2.classList.add('menu__cover-none');
-    animaPrice2.classList.add('menu__price-none');
+    // animaCover2.classList.add('menu__cover-none');
+    // animaPrice2.classList.add('menu__price-none');
 
     animaCover3.classList.add('menu__cover-activ');
     animaPrice3.classList.add('menu__price-activ');
@@ -133,8 +147,8 @@ function functionListener(){
     animaCover2.classList.remove('menu__cover-activ');
     animaPrice2.classList.remove('menu__price-activ');
 
-    animaCover3.classList.remove('menu__cover-none');
-    animaPrice3.classList.remove('menu__price-none');
+    // animaCover3.classList.remove('menu__cover-none');
+    // animaPrice3.classList.remove('menu__price-none');
 
 }
 

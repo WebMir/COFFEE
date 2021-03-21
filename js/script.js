@@ -19,18 +19,11 @@ let animaPrice2 = document.querySelector('.anima-price2');
 let animaCover3 = document.querySelector('.anima-cover3');
 let animaPrice3 = document.querySelector('.anima-price3');
 
-
-// sliderDrink.setAttribute('style', 'opacity: 1;')
 drinkLink.classList.add('activ');
 sliderDrink.classList.add('activ-slider');
 
-// animaCover1.setAttribute('style', 'transform: translateX(0px);')
-// animaPrice1.setAttribute('style', 'transform: translateX(0px);')
-
 function functionDrinkLink(){
-    // sliderDrink.setAttribute('style', 'opacity: 1;')
-    // sliderBake.setAttribute('style', 'opacity: 0;')
-    // sliderDessert.setAttribute('style', 'opacity: 0;')
+
     drinkLink.classList.add('activ');
     bakeLink.classList.remove('activ');
     dessertLink.classList.remove('activ');
@@ -39,27 +32,8 @@ function functionDrinkLink(){
     sliderBake.classList.remove('activ-slider');
     sliderDessert.classList.remove('activ-slider');
 
-    // animaCover1.setAttribute('style', 'transform: translateY(0px);')
-    // animaPrice1.setAttribute('style', 'transform: translateY(0px);')
-
-    // animaCover2.setAttribute('style', 'transform: translateY(-800px);')
-    // animaPrice2.setAttribute('style', 'transform: translateY(600px);')
-
-    // animaCover3.setAttribute('style', 'transform: translateY(-800px);')
-    // animaPrice3.setAttribute('style', 'transform: translateY(600px);')
-
     animaCover1.classList.add('menu__cover-activ');
     animaPrice1.classList.add('menu__price-activ');
-
-    // animaCover2.classList.add('menu__cover-none');
-    // animaPrice2.classList.add('menu__price-none');
-
-    // animaCover3.classList.add('menu__cover-none');
-    // animaPrice3.classList.add('menu__price-none');
-
-
-    // animaCover1.classList.remove('menu__cover-none');
-    // animaPrice1.classList.remove('menu__price-none');
 
     animaCover2.classList.remove('menu__cover-activ');
     animaPrice2.classList.remove('menu__price-activ');
@@ -69,9 +43,7 @@ function functionDrinkLink(){
 
 }
 function functionBakeLink(){
-    // sliderDrink.setAttribute('style', 'opacity: 0;')
-    // sliderBake.setAttribute('style', 'opacity: 1;')
-    // sliderDessert.setAttribute('style', 'opacity: 0;')
+
     drinkLink.classList.remove('activ');
     bakeLink.classList.add('activ');
     dessertLink.classList.remove('activ');
@@ -80,30 +52,11 @@ function functionBakeLink(){
     sliderBake.classList.add('activ-slider');
     sliderDessert.classList.remove('activ-slider');
 
-    // animaCover2.setAttribute('style', 'transform: translateY(0px);')
-    // animaPrice2.setAttribute('style', 'transform: translateY(0px);')
-
-    // animaCover1.setAttribute('style', 'transform: translateX(-800px);')
-    // animaPrice1.setAttribute('style', 'transform: translateX(600px);')
-
-    // animaCover3.setAttribute('style', 'transform: translateX(-800px);')
-    // animaPrice3.setAttribute('style', 'transform: translateX(6000px);')
-
-    // animaCover1.classList.add('menu__cover-none');
-    // animaPrice1.classList.add('menu__price-none');
-
     animaCover2.classList.add('menu__cover-activ');
     animaPrice2.classList.add('menu__price-activ');
 
-    // animaCover3.classList.add('menu__cover-none');
-    // animaPrice3.classList.add('menu__price-none');
-
-
     animaCover1.classList.remove('menu__cover-activ');
     animaPrice1.classList.remove('menu__price-activ');
-
-    // animaCover2.classList.remove('menu__cover-none');
-    // animaPrice2.classList.remove('menu__price-none');
 
     animaCover3.classList.remove('menu__cover-activ');
     animaPrice3.classList.remove('menu__price-activ');
@@ -111,9 +64,7 @@ function functionBakeLink(){
 }
 
 function functionListener(){
-    // sliderDrink.setAttribute('style', 'opacity: 0;')
-    // sliderBake.setAttribute('style', 'opacity: 0;')
-    // sliderDessert.setAttribute('style', 'opacity: 1;')
+
     drinkLink.classList.remove('activ');
     bakeLink.classList.remove('activ');
     dessertLink.classList.add('activ');
@@ -122,33 +73,14 @@ function functionListener(){
     sliderBake.classList.remove('activ-slider');
     sliderDessert.classList.add('activ-slider');
 
-    // animaCover3.setAttribute('style', 'transform: translateX(0px);')
-    // animaPrice3.setAttribute('style', 'transform: translateX(0px);')
-
-    // animaCover2.setAttribute('style', 'transform: translateX(-800px);')
-    // animaPrice2.setAttribute('style', 'transform: translateX(600px);')
-
-    // animaCover1.setAttribute('style', 'transform: translateX(-800px);')
-    // animaPrice1.setAttribute('style', 'transform: translateX(600px);')
-
-    // animaCover1.classList.add('menu__cover-none');
-    // animaPrice1.classList.add('menu__price-none');
-
-    // animaCover2.classList.add('menu__cover-none');
-    // animaPrice2.classList.add('menu__price-none');
-
     animaCover3.classList.add('menu__cover-activ');
     animaPrice3.classList.add('menu__price-activ');
-
 
     animaCover1.classList.remove('menu__cover-activ');
     animaPrice1.classList.remove('menu__price-activ');
 
     animaCover2.classList.remove('menu__cover-activ');
     animaPrice2.classList.remove('menu__price-activ');
-
-    // animaCover3.classList.remove('menu__cover-none');
-    // animaPrice3.classList.remove('menu__price-none');
 
 }
 
@@ -171,12 +103,10 @@ dessertLink.addEventListener('click', () => {
 
 })
 
-
+/***************************************************************************/
 
 let buttonLeft = document.querySelector('.button-left');
 let buttonRight = document.querySelector('.button-right');
-
-
 
 buttonLeft.addEventListener('click', () => {
 
@@ -190,7 +120,6 @@ buttonLeft.addEventListener('click', () => {
 
 })
 
-
 buttonRight.addEventListener('click', () => {
 
     if (drinkLink.classList[2] === 'activ') {
@@ -202,26 +131,7 @@ buttonRight.addEventListener('click', () => {
     }
 
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/***************************************************************************/
 
 let mMenuOpen = document.querySelector('.m-menu__open'); //Кнопка открытия моб меню, находится в в header, в моб версии
 let mMenu = document.querySelector('.m-menu__wrapper'); // Мобильное меню, пока что спрятано
@@ -242,21 +152,19 @@ function clickMenuClose() {
     body.setAttribute('style', 'overflow-y: auto');
 }
 
-
-
-
+/***************************************************************************/
 
 let button1 = document.querySelectorAll('.button');
 let windowMod = document.querySelector('.window');
 let windowForm = document.querySelector('.window__form');
-let windowClase = document.querySelector('.window__clase-svg');
+let windowClose = document.querySelector('.window__close-svg');
 
 button1[0].addEventListener('click', buttonOpen );
 button1[1].addEventListener('click', buttonOpen );
 button1[2].addEventListener('click', buttonOpen );
 windowMod.addEventListener('click', buttonClose );
 windowForm.addEventListener('click', windowFormfun );
-windowClase.addEventListener('click', buttonClose );
+windowClose.addEventListener('click', buttonClose );
 
 function buttonOpen() {
     windowMod.setAttribute('style', 'display: flex;');

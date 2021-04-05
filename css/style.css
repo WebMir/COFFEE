@@ -40,6 +40,7 @@ body{
 .header{
 	width: 100%;
 	max-width: 1920px;
+	min-height: 360px;
 	height: 100vh;
 	padding: var(--paddingWraper);
 	margin:0 auto;
@@ -104,13 +105,11 @@ body{
 	text-transform: uppercase;
 	margin-top: 1em;
 	font-weight: 100;
-
 }
 .header__text{
 	font-size: 1.5em;
 	line-height: 1.5;
 	margin: 1.5em 0;
-
 }
 .header__button{
 	background-color: #ffffff1f;
@@ -465,6 +464,9 @@ body{
 	padding: 0.5em;
 	font-size: 1.5em;
 	overflow-y: scroll;
+	webkit-overflow-scrolling: touch;
+	justify-content: center;
+	align-items: center;
 }
 .window__form{
 	margin: auto;

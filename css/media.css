@@ -227,6 +227,7 @@
 
 
 @media screen and (max-width: 500px) {
+   
    .gallery__wrapper{
       grid-template:
       " title . . . " auto
@@ -314,8 +315,22 @@
    }
 }
 
-
-
+@media screen and (max-width: 560px) {
+   
+   @media screen and (max-height: 500px) {
+      .header__cover{
+         display: none;
+      }
+      .header__title{
+         font-size: 3.5em;
+         margin: 0;
+      }
+      .header__text {
+         font-size: 1.2em;
+         margin: 0.3em 0;
+      }
+   }
+}
 
 
 @media screen and (min-width: 560px) {

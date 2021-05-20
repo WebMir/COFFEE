@@ -453,7 +453,7 @@ body{
 
 
 
-/* Модальное окно заявок  */
+/*Модальное окно, форма заказа*/
 .window{
 	display: none;
 	background-image: radial-gradient(circle, #392f29e0, #b69888da);

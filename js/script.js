@@ -84,7 +84,6 @@ function functionListener(){
 
 }
 
-
 drinkLink.addEventListener('click', () => {
 
     functionDrinkLink()
